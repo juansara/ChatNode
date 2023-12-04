@@ -81,15 +81,15 @@ $(function() {
     //Recibir la informacion desde php
     socket.on('dataDePHP', data => {
         dia.html(data['time']);
-        localStorage.setItem('dia_x', data['time']);
+        // localStorage.setItem('dia_x', data['time']);
     })
 
     // Verificamos si estamos en la pagina principal y guardamos el valor del dia para que este no se pueda borrar
-    if(window.location.href == 'http://localhost:8080/'){
-        dia.html(localStorage.getItem("dia_x")); //Usamos local storage para almacenar el valor de la fecha en caso esta se borre cuando se recargue la pagina
-    } else{
-        console.log("SEXO")
-    }
+    // if(window.location.href == 'http://localhost:8080/'){
+    //     dia.html(localStorage.getItem("dia_x")); //Usamos local storage para almacenar el valor de la fecha en caso esta se borre cuando se recargue la pagina
+    // } else{
+    //     console.log("SEXO")
+    // }
 
 })
 
