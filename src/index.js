@@ -16,7 +16,7 @@ app.post('/', (req,res) => {
 
     socketio.emit('dataDePHP', dataDePHP);
 
-    res.send('Datos recibidos en el servidor de WEBSOCKET')
+    res.send(`Datos recibidos en el servidor de WEBSOCKET en JS: ${dataDePHP["time"]}`)
 })
 
 require('./socket')(socketio); // Ejecutamos la funcion del archivo sockets.js, incluimos el archivo de socket.js
