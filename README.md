@@ -20,11 +20,11 @@ https://www.apachefriends.org
 <img src="images/Extensiones-PHP.png" alt="extensiones"/>
 
 6. Tener abierto el puerto 3000 (PHP) y 8080 (JavaScript)
-7. Correr primero el archivo JavaScript
+7. Correr primero el archivo JavaScript y cargar la pagina desde http://localhost:8080/
 ```sh
 npm run start
 ```
-8. Luego correr el archivo "enviar-data.php" utilizando PHP Sever (opcional utilizar Apache Web Server con Xaamp)
+8. Luego correr el archivo "enviar-data.php" utilizando PHP Sever (opcional utilizar Apache Web Server con Xaamp) y cargarlo desde http://localhost:3000/
 <img src="images/php_server.png" alt="php_server"/>
 
 ## Archivos Principales
